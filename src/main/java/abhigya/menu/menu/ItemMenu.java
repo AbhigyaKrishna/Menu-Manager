@@ -463,8 +463,7 @@ public class ItemMenu {
         if (handler == null) {
             if (other.handler != null)
                 return false;
-        } else if (!handler.equals(other.handler))
-            return false;
+        }
         if (parent == null) {
             if (other.parent != null)
                 return false;
