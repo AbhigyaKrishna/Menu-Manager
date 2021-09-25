@@ -6,7 +6,7 @@
 
     <groupId>abhigya</groupId>
     <artifactId>menu</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>MenuManager</name>

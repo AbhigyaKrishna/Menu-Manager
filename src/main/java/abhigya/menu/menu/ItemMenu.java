@@ -449,34 +449,4 @@ public class ItemMenu {
         return result;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        ItemMenu other = (ItemMenu) obj;
-        if (!Arrays.equals(contents, other.contents))
-            return false;
-        if (handler == null) {
-            if (other.handler != null)
-                return false;
-        }
-        if (parent == null) {
-            if (other.parent != null)
-                return false;
-        } else if (!parent.equals(other.parent))
-            return false;
-        if (size != other.size)
-            return false;
-        if (title == null) {
-            if (other.title != null)
-                return false;
-        } else if (!title.equals(other.title))
-            return false;
-        return true;
-    }
-
 }

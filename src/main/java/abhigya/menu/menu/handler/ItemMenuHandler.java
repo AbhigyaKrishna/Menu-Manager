@@ -92,26 +92,4 @@ public class ItemMenuHandler implements Listener {
         return result;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        ItemMenuHandler other = (ItemMenuHandler) obj;
-        if (menu == null) {
-            if (other.menu != null)
-                return false;
-        } else if (!menu.equals(other.menu))
-            return false;
-        if (plugin == null) {
-            if (other.plugin != null)
-                return false;
-        } else if (!plugin.getDescription().getFullName().equals(other.plugin.getDescription().getFullName()))
-            return false;
-        return true;
-    }
-
 }
